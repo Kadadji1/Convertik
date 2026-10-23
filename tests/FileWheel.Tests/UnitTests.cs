@@ -1,6 +1,7 @@
 using FileWheel.Core;
 using FileWheel.Core.Backends;
 using FileWheel.Core.Operations;
+using ImageMagick;
 
 namespace FileWheel.Tests;
 
