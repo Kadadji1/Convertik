@@ -166,10 +166,18 @@ public class IntegrationTests : IClassFixture<IntegrationTests.Samples>
             {
                 var outDir = Path.Combine(_s.Dir, "out", key, op.Id);
                 Directory.CreateDirectory(outDir);
-                var parameters = op.Parameters.ToDictionary(p => p.Key, p => p.Key == "end" ? "1.5" : p.Key == "start" ? "0.5" : p.DefaultValue);
+                var operationItems = items;
+                if (op.Id == "files.rename.numbered")
+                {
+                    var copy = Path.Combine(outDir, Path.GetFileName(path));
+                    File.Copy(path, copy, overwrite: true);
+                    operationItems = [new FileItem(copy)];
+                }
+                var parameters = op.Parameters.ToDictionary(p => p.Key,
+                    p => p.Key == "end" ? "1.5" : p.Key == "start" ? op.Id == "files.rename.numbered" ? "1" : "0.5" : p.DefaultValue);
                 try
                 {
-                    var result = await op.ExecuteAsync(items, _s.Context(outDir, parameters));
+                    var result = await op.ExecuteAsync(operationItems, _s.Context(outDir, parameters));
                     Assert.NotEmpty(result.Outputs);
                     foreach (var o in result.Outputs)
                     {
