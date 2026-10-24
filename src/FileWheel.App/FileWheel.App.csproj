@@ -9,7 +9,7 @@
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>FileWheel</AssemblyName>
+    <AssemblyName>Convertik</AssemblyName>
     <RootNamespace>FileWheel.App</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>Assets\FileWheel.ico</ApplicationIcon>
@@ -23,10 +23,10 @@
     -->
     <!-- Explorer selection and Outlook drops use classic COM, which trimming turns off by default. -->
     <BuiltInComInteropSupport>true</BuiltInComInteropSupport>
-    <Product>FileWheel</Product>
+    <Product>Convertik</Product>
     <Authors>Vladyslav Kononov</Authors>
     <Company>Vladyslav Kononov</Company>
-    <Copyright>FileWheel additions © 2026 Vladyslav Kononov. Original and third-party notices retained.</Copyright>
+    <Copyright>Convertik © 2026 Vladyslav Kononov. Original and third-party notices retained.</Copyright>
     <Description>Windows file conversion and batch tools</Description>
     <!-- ThemeMode (Fluent) is still marked experimental. -->
     <NoWarn>$(NoWarn);WPF0001;WFO0003</NoWarn>

@@ -81,7 +81,7 @@ internal sealed class App : Application
         }
         catch (InvalidOperationException ex)
         {
-            MessageBox.Show(ex.Message, "FileWheel", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(ex.Message, "Convertik", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
 
         _controller = new WheelController(_settings, _tools, jobs, _input);
@@ -100,7 +100,7 @@ internal sealed class App : Application
         _watcher.Apply();
         SettingsWindow.Updater = _updater;
         SettingsWindow.Operations = () => _controller.AllOperations;
-        // Updates are disabled until a FileWheel release repository is configured.
+        // Updates are disabled until a Convertik release repository is configured.
         _hotkey = new HotkeyListener(_controller.OnHotkey);
         ApplyHotkey();
         _instance.Listen(Dispatcher, HandleArgs);
@@ -115,11 +115,11 @@ internal sealed class App : Application
         }
         else if (_args.Contains("--updated"))
         {
-            _tray.Show(T("FileWheel was updated", "FileWheel обновлён"), T($"Version {Updater.Current}", $"Версия {Updater.Current}"), false);
+            _tray.Show(T("Convertik was updated", "Convertik обновлён"), T($"Version {Updater.Current}", $"Версия {Updater.Current}"), false);
         }
         else if (!_args.Contains("--background"))
         {
-            _tray.Show(T("FileWheel is running", "FileWheel запущен"), T("Grab a file, tap Shift while dragging and drop it on a format.", "Перетащите файл, нажмите Shift и отпустите его над нужным форматом."), false);
+            _tray.Show(T("Convertik is running", "Convertik запущен"), T("Grab a file, tap Shift while dragging and drop it on a format.", "Перетащите файл, нажмите Shift и отпустите его над нужным форматом."), false);
         }
         HandleArgs(_args);
     }
@@ -200,7 +200,7 @@ internal sealed class App : Application
             SettingsWindow.RefreshIfOpen();
             var now = AppSettings.HotkeyName(preset);
             Notifications.Show(T("Shortcut changed", "Сочетание клавиш изменено"),
-                T($"{taken} is used by another app, so FileWheel now uses {now}. You can change it in Settings.", $"{taken} используется другим приложением, поэтому FileWheel теперь использует {now}. Это можно изменить в настройках."));
+                T($"{taken} is used by another app, so Convertik now uses {now}. You can change it in Settings.", $"{taken} используется другим приложением, поэтому Convertik теперь использует {now}. Это можно изменить в настройках."));
             return;
         }
 
@@ -235,7 +235,7 @@ internal sealed class App : Application
 
             Without the mouse: select files in File Explorer (or copy a file or a screenshot) and press {hotkey}.
             Arrows pick a slice, Enter runs it, Tab switches wheels, Esc closes.
-            Also via right-click → “FileWheel…”.
+            Also via right-click → “Convertik…”.
 
             The result is saved next to the original file; the original stays untouched.
             """,
@@ -252,18 +252,18 @@ internal sealed class App : Application
 
             Без мыши: выберите файлы в Проводнике (или скопируйте файл либо снимок экрана) и нажмите {hotkey}.
             Стрелки — выбор сектора, Enter — запуск, Tab — смена меню, Esc — закрыть.
-            Также можно нажать правой кнопкой → «FileWheel…».
+            Также можно нажать правой кнопкой → «Convertik…».
 
             Результат сохраняется рядом с исходным файлом. Исходник не изменяется.
             """);
-        MessageBox.Show(text, T("How FileWheel works", "Как работает FileWheel"), MessageBoxButton.OK, MessageBoxImage.Information);
+        MessageBox.Show(text, T("How Convertik works", "Как работает Convertik"), MessageBoxButton.OK, MessageBoxImage.Information);
     }
 
     private void OnUnhandled(object sender, DispatcherUnhandledExceptionEventArgs e)
     {
         Log(e.Exception);
         e.Handled = true;
-        Notifications.Show(T("FileWheel – error", "FileWheel — ошибка"), e.Exception.Message, error: true);
+        Notifications.Show(T("Convertik – error", "Convertik — ошибка"), e.Exception.Message, error: true);
     }
 
     public static void Log(Exception ex)

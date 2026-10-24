@@ -6,7 +6,7 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 $PublishDirectory = (Resolve-Path -LiteralPath $PublishDirectory).Path
-foreach ($file in @('FileWheel.exe', 'tools/pandoc.exe', 'LICENSE', 'THIRD-PARTY-NOTICES.md')) {
+foreach ($file in @('Convertik.exe', 'tools/pandoc.exe', 'LICENSE', 'THIRD-PARTY-NOTICES.md')) {
     if (!(Test-Path -LiteralPath (Join-Path $PublishDirectory $file))) {
         throw "Published app is missing $file. Run build.ps1 first."
     }
@@ -26,8 +26,8 @@ if (!$Compiler) { throw 'Install Inno Setup 6 or 7 from https://jrsoftware.org/i
 New-Item -ItemType Directory -Force -Path $OutputDirectory | Out-Null
 $OutputDirectory = (Resolve-Path -LiteralPath $OutputDirectory).Path
 & $Compiler "/DAppVersion=$Version" "/DPublishDir=$PublishDirectory" "/DArtifactsDir=$OutputDirectory" (Join-Path $PSScriptRoot '../installer/FileWheel.iss')
-if ($LASTEXITCODE -ne 0) { throw 'FileWheel installer compilation failed.' }
-$installer = Join-Path $OutputDirectory "FileWheel-$Version-Setup-win-x64.exe"
+if ($LASTEXITCODE -ne 0) { throw 'Convertik installer compilation failed.' }
+$installer = Join-Path $OutputDirectory "Convertik-$Version-Setup-win-x64.exe"
 if (!(Test-Path -LiteralPath $installer)) { throw 'Installer output was not created.' }
 $hash = (Get-FileHash -LiteralPath $installer -Algorithm SHA256).Hash.ToLowerInvariant()
 "$hash  $(Split-Path $installer -Leaf)" | Out-File -Encoding ascii "$installer.sha256"

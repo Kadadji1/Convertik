@@ -6,7 +6,7 @@
 
 Convert files, prepare images, organize batches, and automate repeat work from a radial menu. Processing happens locally on your PC.
 
-[Downloads](https://github.com/Kadadji1/filewheel-workbench/releases) · [Build from source](#build-from-source) · [License](LICENSE)
+[Downloads](https://github.com/Kadadji1/Convertik/releases) · [Build from source](#build-from-source) · [License](LICENSE)
 
 ## At a glance
 
@@ -20,9 +20,9 @@ Conversions create new output files and leave originals in place. Batch renaming
 
 ## Downloads
 
-There is no Convertik release available yet. The Releases page will list the installer and portable ZIP once a branded release is published.
+Download the Windows installer or portable ZIP from [GitHub Releases](https://github.com/Kadadji1/Convertik/releases). Each release includes SHA-256 checksums.
 
-The current source build still produces files named `FileWheel.exe` and `FileWheel-<version>-Setup-win-x64.exe`. Those names will change with the branded release.
+
 
 ## Use the radial menu
 
@@ -52,10 +52,10 @@ Build on Windows x64 with PowerShell and the **.NET 10 SDK**. The build download
 ```powershell
 ./build.ps1
 dotnet test tests/FileWheel.Tests -c Release
-./publish/FileWheel.exe --self-test ./self-test
+./publish/Convertik.exe --self-test ./self-test
 ```
 
-The executable is written to `publish/FileWheel.exe`. To create an installer, install [Inno Setup 6 or 7](https://jrsoftware.org/isdl.php), then run:
+The portable executable is written to `publish/Convertik.exe`. To create an installer, install [Inno Setup 6 or 7](https://jrsoftware.org/isdl.php), then run:
 
 ```powershell
 ./scripts/build-installer.ps1

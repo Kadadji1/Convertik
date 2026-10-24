@@ -17,7 +17,7 @@ internal sealed partial class SettingsWindow
             Width = 72, Height = 72, Margin = new Thickness(0, 0, 20, 0)
         });
         var heading = new StackPanel { VerticalAlignment = VerticalAlignment.Center };
-        heading.Children.Add(Text("FileWheel", 30, FontWeights.SemiBold));
+        heading.Children.Add(Text("Convertik", 30, FontWeights.SemiBold));
         heading.Children.Add(Text(T("A local toolkit for everyday files.", "Локальные инструменты для повседневной работы с файлами."), 14, brush: Theme.Muted));
         header.Children.Add(heading);
         root.Children.Add(header);
@@ -30,6 +30,6 @@ internal sealed partial class SettingsWindow
             T("Original copyright notices and third-party license terms are kept in the distribution.",
               "Уведомления об исходных авторах и условия лицензий сторонних компонентов сохранены в дистрибутиве."), null, glyph: ""));
         root.Children.Add(SectionHeader(T("Updates", "Обновления")));
-        root.Children.Add(Card("FileWheel", T("Updates are not configured yet.", "Автообновления пока не настроены."), null, glyph: ""));
+        root.Children.Add(Card("Convertik", T("Updates are not configured yet.", "Автообновления пока не настроены."), null, glyph: ""));
     }
 }

@@ -7,7 +7,7 @@ $ErrorActionPreference = 'Stop'
 if ($env:GITHUB_ACTIONS -ne 'true') { throw 'Installer smoke test must run on a disposable GitHub Actions runner.' }
 $Installer = (Resolve-Path -LiteralPath $Installer).Path
 $PublishDirectory = (Resolve-Path -LiteralPath $PublishDirectory).Path
-$testRoot = Join-Path $env:RUNNER_TEMP ("filewheel-installer-" + [guid]::NewGuid())
+$testRoot = Join-Path $env:RUNNER_TEMP ("convertik-installer-" + [guid]::NewGuid())
 $installDir = Join-Path $testRoot 'installed app'
 New-Item -ItemType Directory -Path $testRoot | Out-Null
 $p = Start-Process $Installer -ArgumentList "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /DIR=`"$installDir`" /LOG=`"$testRoot/install.log`"" -PassThru -Wait -WindowStyle Hidden
@@ -20,9 +20,9 @@ foreach ($source in Get-ChildItem -LiteralPath $PublishDirectory -Recurse -File)
     }
 }
 $selfTest = Join-Path $testRoot 'self-test'
-$p = Start-Process (Join-Path $installDir 'FileWheel.exe') -ArgumentList "--self-test `"$selfTest`"" -PassThru -Wait -WindowStyle Hidden
+$p = Start-Process (Join-Path $installDir 'Convertik.exe') -ArgumentList "--self-test `"$selfTest`"" -PassThru -Wait -WindowStyle Hidden
 Get-Content (Join-Path $selfTest 'self-test.txt')
-if ($p.ExitCode -ne 0) { throw 'Installed FileWheel self-test failed.' }
+if ($p.ExitCode -ne 0) { throw 'Installed Convertik self-test failed.' }
 $p = Start-Process (Join-Path $installDir 'unins000.exe') -ArgumentList '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART' -PassThru -Wait -WindowStyle Hidden
-if ($p.ExitCode -ne 0 -or (Test-Path -LiteralPath (Join-Path $installDir 'FileWheel.exe'))) { throw 'Uninstall failed.' }
+if ($p.ExitCode -ne 0 -or (Test-Path -LiteralPath (Join-Path $installDir 'Convertik.exe'))) { throw 'Uninstall failed.' }
 Write-Output 'Installer verified: all payload hashes match, installed app self-test passed, uninstall passed.'

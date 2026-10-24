@@ -10,22 +10,22 @@
 
 [Setup]
 AppId={{3DA6D351-5305-41DD-95CC-626A8671CD1D}
-AppName=FileWheel
+AppName=Convertik
 AppVersion={#AppVersion}
-AppVerName=FileWheel {#AppVersion}
+AppVerName=Convertik {#AppVersion}
 AppPublisher=Vladyslav Kononov
 DefaultDirName={localappdata}\Programs\FileWheel
-DefaultGroupName=FileWheel
+DefaultGroupName=Convertik
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
 MinVersion=10.0.17763
 ArchitecturesAllowed=x64compatible
 ArchitecturesInstallIn64BitMode=x64compatible
 OutputDir={#ArtifactsDir}
-OutputBaseFilename=FileWheel-{#AppVersion}-Setup-win-x64
+OutputBaseFilename=Convertik-{#AppVersion}-Setup-win-x64
 SetupIconFile=..\src\FileWheel.App\Assets\FileWheel.ico
 UninstallDisplayIcon={app}\FileWheel.exe
-UninstallDisplayName=FileWheel
+UninstallDisplayName=Convertik
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
@@ -47,7 +47,7 @@ Name: "{userprograms}\FileWheel"; Filename: "{app}\FileWheel.exe"
 Name: "{userdesktop}\FileWheel"; Filename: "{app}\FileWheel.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\FileWheel.exe"; Description: "{cm:LaunchProgram,FileWheel}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\FileWheel.exe"; Description: "{cm:LaunchProgram,Convertik}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
 Filename: "{app}\FileWheel.exe"; Parameters: "--unregister"; Flags: runhidden waituntilterminated; RunOnceId: "Unregister"
