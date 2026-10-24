@@ -92,7 +92,7 @@ internal sealed partial class SettingsWindow
         var question = used.Count == 0
             ? T($"Delete the preset “{preset.Name}”?", $"Удалить шаблон «{preset.Name}»?")
             : T($"The preset “{preset.Name}” is used by {used.Count} watched folder(s); they will be turned off. Delete?", $"Шаблон «{preset.Name}» используется в отслеживаемых папках ({used.Count}). Отслеживание будет отключено. Удалить?");
-        if (MessageBox.Show(this, question, "FileWheel", MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes)
+        if (MessageBox.Show(this, question, "Convertik", MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes)
             return;
         _settings.Presets.Remove(preset);
         _settings.FavoriteOperations.Remove(id);
@@ -151,10 +151,10 @@ internal sealed partial class SettingsWindow
 
         root.Children.Add(SectionHeader(T("How it works", "Как это работает")));
         root.Children.Add(Card(T("Only new files", "Только новые файлы"),
-            T("A file is processed once it has finished downloading or copying. What was already in the folder stays as it is. FileWheel's own results are not processed again.", "Файл обрабатывается после завершения загрузки или копирования. Уже находившиеся в папке файлы не меняются. Результаты FileWheel не обрабатываются повторно."),
+            T("A file is processed once it has finished downloading or copying. What was already in the folder stays as it is. Convertik's own results are not processed again.", "Файл обрабатывается после завершения загрузки или копирования. Уже находившиеся в папке файлы не меняются. Результаты Convertik не обрабатываются повторно."),
             null, glyph: ""));
         root.Children.Add(Card(T("Where results go", "Куда сохранять результаты"),
-            T("As set in General → Save results. Originals are never changed. Folders are watched only while FileWheel is running.", "Согласно разделу «Основные → Сохранять результаты». Исходники не изменяются. Папки отслеживаются, пока запущен FileWheel."),
+            T("As set in General → Save results. Originals are never changed. Folders are watched only while Convertik is running.", "Согласно разделу «Основные → Сохранять результаты». Исходники не изменяются. Папки отслеживаются, пока запущен Convertik."),
             null, glyph: Glyphs.Folder));
     }
 
