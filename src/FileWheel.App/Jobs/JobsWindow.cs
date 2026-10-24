@@ -22,7 +22,7 @@ internal sealed class JobsWindow : Window
 
     public JobsWindow()
     {
-        Title = T("FileWheel – progress", "FileWheel — ход выполнения");
+        Title = T("Convertik – progress", "Convertik — ход выполнения");
         WindowStyle = WindowStyle.None;
         AllowsTransparency = true;
         Background = Brushes.Transparent;

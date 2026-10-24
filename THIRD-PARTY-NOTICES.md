@@ -1,6 +1,6 @@
 # Third-party software
 
-FileWheel is derived from the MIT-licensed Sweetch project (original copyright notices are preserved in [LICENSE](LICENSE)) and uses the following software. Each component keeps its own license.
+Convertik is derived from the MIT-licensed Sweetch project (original copyright notices are preserved in [LICENSE](LICENSE)) and uses the following software. Each component keeps its own license.
 
 | Component | Used for | License |
 |---|---|---|
@@ -17,4 +17,4 @@ FileWheel is derived from the MIT-licensed Sweetch project (original copyright n
 
 Pandoc is bundled from the unmodified official Windows distribution. Its `COPYING.rtf`, `COPYRIGHT.txt` and `MANUAL.html` are included in `tools/`. Source release: https://hackage.haskell.org/package/pandoc-3.12.1. The Windows ZIP is verified against SHA-256 `6ef431cb20b2c24a0371fc19200dc49d452be54b1b5c9239f3462841ef53e587` before packaging.
 
-FFmpeg is downloaded on demand into `%LOCALAPPDATA%\FileWheel\tools`, checked against its published SHA-256. LibreOffice is installed separately. These components run as separate programs; FileWheel invokes them through their command-line interfaces.
+FFmpeg is downloaded on demand into `%LOCALAPPDATA%\FileWheel\tools`, checked against its published SHA-256. LibreOffice is installed separately. These components run as separate programs; Convertik invokes them through their command-line interfaces.

@@ -6,7 +6,7 @@
 
 Convert files, prepare images, organize batches, and automate repeat work from a radial menu. Processing happens locally on your PC.
 
-[Downloads](https://github.com/Kadadji1/Convertik/releases) · [Build from source](#build-from-source) · [License](LICENSE)
+[Downloads](#downloads) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
 
 ## At a glance
 
@@ -20,9 +20,7 @@ Conversions create new output files and leave originals in place. Batch renaming
 
 ## Downloads
 
-Download the Windows installer or portable ZIP from [GitHub Releases](https://github.com/Kadadji1/Convertik/releases). Each release includes SHA-256 checksums.
-
-
+The Windows installer and portable ZIP are currently available as the `Convertik-Windows` artifact in the [latest successful Windows build](https://github.com/Kadadji1/Convertik/actions/workflows/build.yml). Open a successful run and download the artifact under **Artifacts**; unpack it to find the installer, portable ZIP, and SHA-256 checksum. GitHub Actions artifacts expire. A permanent versioned download will appear on [GitHub Releases](https://github.com/Kadadji1/Convertik/releases) after the first release is published.
 
 ## Use the radial menu
 

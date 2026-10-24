@@ -43,7 +43,7 @@ internal static class ShareHelper
                 Background = Brushes.Transparent,
                 ShowInTaskbar = false,
                 ResizeMode = ResizeMode.NoResize,
-                Title = "FileWheel",
+                Title = "Convertik",
             };
             _host.Show();
             var handle = new WindowInteropHelper(_host).Handle;
@@ -52,7 +52,7 @@ internal static class ShareHelper
             {
                 var request = e.Request;
                 request.Data.Properties.Title = _title;
-                request.Data.Properties.ApplicationName = "FileWheel";
+                request.Data.Properties.ApplicationName = "Convertik";
                 request.Data.SetStorageItems(_pending);
             };
         }

@@ -12,7 +12,7 @@ internal sealed class FeedbackWindow : Window
     internal FeedbackWindow()
     {
         Theme.Refresh();
-        Title = T("FileWheel — feedback", "FileWheel — обратная связь");
+        Title = T("Convertik — feedback", "Convertik — обратная связь");
         Width = 520;
         SizeToContent = SizeToContent.Height;
         ResizeMode = ResizeMode.NoResize;
@@ -39,7 +39,7 @@ internal sealed class FeedbackWindow : Window
         {
             Clipboard.SetText(details.Text);
             MessageBox.Show(this, T("Diagnostics copied. Paste them into your message.", "Данные скопированы. Вставьте их в сообщение."),
-                "FileWheel", MessageBoxButton.OK, MessageBoxImage.Information);
+                "Convertik", MessageBoxButton.OK, MessageBoxImage.Information);
         }, primary: true);
         copy.Margin = new Thickness(0, 16, 0, 0);
         root.Children.Add(copy);
@@ -50,7 +50,7 @@ internal sealed class FeedbackWindow : Window
     {
         var version = Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "unknown";
         var architecture = Environment.Is64BitProcess ? "x64" : "x86";
-        return $"FileWheel {version}{Environment.NewLine}{Environment.OSVersion}{Environment.NewLine}{architecture}";
+        return $"Convertik {version}{Environment.NewLine}{Environment.OSVersion}{Environment.NewLine}{architecture}";
     }
 
     public static void ShowSingle() => new FeedbackWindow().ShowDialog();
