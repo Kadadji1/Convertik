@@ -40,8 +40,8 @@ Available operations depend on the input files and installed tools. Images inclu
 
 - Windows 10 version 1809 or later, or Windows 11
 - 64-bit Windows
-- Settings: `%APPDATA%\\FileWheel`
-- Downloaded tools: `%LOCALAPPDATA%\\FileWheel\\tools`
+- Settings: `%APPDATA%\FileWheel`
+- Downloaded tools: `%LOCALAPPDATA%\FileWheel\tools`
 
 Updates are currently disabled; the app does not contact an update server.
 
