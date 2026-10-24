@@ -1,4 +1,4 @@
-![Convertik radial menu logo and brand card](assets/convertik-readme-card.svg)
+![Convertik file toolkit: conversion, image tools, batch rename and automation](assets/convertik-promo-card.svg)
 
 # Convertik
 
