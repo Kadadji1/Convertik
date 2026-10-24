@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-<title id="title">Convertik document mark</title><desc id="desc">A folded page with a forward-moving C-shaped line.</desc>
-<rect width="256" height="256" rx="56" fill="#10233a"/>
-<path d="M66 34h82l45 45v143H66z" fill="#f4f7f7"/>
-<path d="M148 34v46h45" fill="#52d8c5"/>
-<path d="M173 101h-28c-27 0-45 18-45 42s18 42 45 42h28" fill="none" stroke="#0da9b5" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="m158 171 16 14-16 14" fill="none" stroke="#e9a94d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512"><g fill="#04061A" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"><path d="M414.25 408.82 A220 220 0 0 1 188.02 465.23 L223.55 355.86 A105 105 0 0 0 331.53 328.94 Z"/><path d="M159.56 453.73 A220 220 0 0 1 36 256 L151 256 A105 105 0 0 0 209.97 350.37 Z"/><path d="M38.14 225.38 A220 220 0 0 1 188.02 46.77 L223.55 156.14 A105 105 0 0 0 152.02 241.39 Z"/><path d="M217.8 39.34 A220 220 0 0 1 433.98 126.69 L340.95 194.28 A105 105 0 0 0 237.77 152.6 Z"/></g><circle cx="256" cy="256" r="77" fill="#FFFFFF"/></svg>
