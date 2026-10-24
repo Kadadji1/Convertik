@@ -1,27 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="520" viewBox="0 0 1280 520" role="img" aria-labelledby="title desc">
-<title id="title">Convertik — files, moving forward</title><desc id="desc">A desktop file toolkit with a radial wheel for converting and organizing files.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1728"/><stop offset=".58" stop-color="#132943"/><stop offset="1" stop-color="#173e50"/></linearGradient><linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#59e2ce"/><stop offset="1" stop-color="#19a7bd"/></linearGradient><radialGradient id="glow"><stop stop-color="#2b8e93" stop-opacity=".25"/><stop offset="1" stop-color="#2b8e93" stop-opacity="0"/></radialGradient></defs>
-<rect width="1280" height="520" rx="30" fill="url(#bg)"/><circle cx="1030" cy="260" r="330" fill="url(#glow)"/>
-<g opacity=".16" stroke="#8bb7c8"><path d="M820 0v520M900 0v520M980 0v520M1060 0v520M1140 0v520M1220 0v520"/><path d="M800 80h480M800 160h480M800 240h480M800 320h480M800 400h480"/></g>
-<g transform="translate(870 77)">
-<circle cx="175" cy="180" r="150" fill="#10243b" stroke="#31556a" stroke-width="2"/>
-<g fill="url(#accent)">
-<rect x="157" y="43" width="36" height="72" rx="15"/><rect x="157" y="245" width="36" height="72" rx="15"/>
-<rect x="38" y="162" width="72" height="36" rx="15"/><rect x="240" y="162" width="72" height="36" rx="15"/>
-<rect x="72" y="77" width="36" height="65" rx="15" transform="rotate(-45 90 110)"/><rect x="224" y="219" width="36" height="65" rx="15" transform="rotate(-45 242 252)"/>
-<rect x="224" y="77" width="36" height="65" rx="15" transform="rotate(45 242 110)"/><rect x="72" y="219" width="36" height="65" rx="15" transform="rotate(45 90 252)"/>
-</g><circle cx="175" cy="180" r="66" fill="#f1b85a"/><path d="M148 180h52m-19-19 19 19-19 19" fill="none" stroke="#10243b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<title id="title">Convertik — files, moving forward</title><desc id="desc">A file moves through a clear conversion workflow.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101f33"/><stop offset="1" stop-color="#18374a"/></linearGradient></defs>
+<rect width="1280" height="520" rx="28" fill="url(#bg)"/>
+<path d="M0 425c230-72 369 30 575-38s341-183 705-101v234H0z" fill="#153044" opacity=".55"/>
+<g transform="translate(84 78)">
+<rect width="92" height="92" rx="23" fill="#10233a"/>
+<path d="M24 17h30l17 17v42H24z" fill="#f4f7f7"/><path d="M54 17v18h17" fill="#52d8c5"/>
+<path d="M62 42h-9c-10 0-16 7-16 16s6 16 16 16h9" fill="none" stroke="#0da9b5" stroke-width="6" stroke-linecap="round"/><path d="m56 67 6 5-6 5" fill="none" stroke="#e9a94d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="116" y="61" fill="#f3f6f8" font-family="Segoe UI,Arial,sans-serif" font-size="42" font-weight="700" letter-spacing=".5">Convertik</text>
 </g>
-<g transform="translate(78 84)">
-<rect x="0" y="0" width="54" height="54" rx="15" fill="url(#accent)"/><path d="M15 13h16l10 10v19H15z" fill="#10243b"/><path d="M31 13v11h10" fill="none" stroke="#59e2ce" stroke-width="3"/>
-<text x="72" y="42" fill="#f4f7fa" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="700" letter-spacing=".2">CONVERTIK</text>
-<rect x="0" y="132" width="8" height="174" rx="4" fill="#f1b85a"/>
-<text x="32" y="176" fill="#f4f7fa" font-family="Segoe UI,Arial,sans-serif" font-size="49" font-weight="700">Files, moving</text>
-<text x="32" y="234" fill="#f4f7fa" font-family="Segoe UI,Arial,sans-serif" font-size="49" font-weight="700">forward.</text>
-<text x="33" y="284" fill="#b7c8d8" font-family="Segoe UI,Arial,sans-serif" font-size="21">A practical file toolkit, one gesture away.</text>
-<g transform="translate(32 342)" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="600">
-<rect width="145" height="38" rx="19" fill="#1a3950" stroke="#34657a"/><text x="18" y="25" fill="#d5e5ea">CONVERT</text>
-<rect x="158" width="125" height="38" rx="19" fill="#1a3950" stroke="#34657a"/><text x="177" y="25" fill="#d5e5ea">ORGANIZE</text>
-<rect x="296" width="112" height="38" rx="19" fill="#1a3950" stroke="#34657a"/><text x="315" y="25" fill="#d5e5ea">AUTOMATE</text>
+<g transform="translate(84 223)" font-family="Segoe UI,Arial,sans-serif">
+<text x="0" y="0" fill="#f3f6f8" font-size="52" font-weight="700">Your files.</text>
+<text x="0" y="64" fill="#f3f6f8" font-size="52" font-weight="700">Ready for what’s next.</text>
+<text x="2" y="122" fill="#b8cad5" font-size="21">Convert, prepare, and organize — right from your desktop.</text>
+<g transform="translate(2 161)" font-size="14" font-weight="700" letter-spacing="1">
+<rect width="128" height="38" rx="19" fill="#204556"/><text x="19" y="25" fill="#a9eee2">CONVERT</text>
+<rect x="141" width="128" height="38" rx="19" fill="#204556"/><text x="161" y="25" fill="#a9eee2">PREPARE</text>
+<rect x="282" width="137" height="38" rx="19" fill="#204556"/><text x="300" y="25" fill="#a9eee2">ORGANIZE</text>
 </g>
-</g></svg>
+</g>
+<g transform="translate(740 107)">
+<rect x="0" y="76" width="180" height="228" rx="18" fill="#f4f7f7"/>
+<path d="M115 76v57h65" fill="#52d8c5"/>
+<rect x="29" y="166" width="88" height="9" rx="4.5" fill="#d8e0e3"/><rect x="29" y="189" width="121" height="9" rx="4.5" fill="#d8e0e3"/><rect x="29" y="212" width="100" height="9" rx="4.5" fill="#d8e0e3"/>
+<rect x="29" y="253" width="58" height="27" rx="8" fill="#15aeba"/><text x="42" y="272" fill="#ffffff" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">INPUT</text>
+<path d="M217 190h105m-24-22 24 22-24 22" fill="none" stroke="#e9a94d" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="359" y="76" width="180" height="228" rx="18" fill="#f4f7f7"/>
+<path d="M474 76v57h65" fill="#52d8c5"/>
+<rect x="388" y="166" width="88" height="9" rx="4.5" fill="#d8e0e3"/><rect x="388" y="189" width="121" height="9" rx="4.5" fill="#d8e0e3"/><rect x="388" y="212" width="100" height="9" rx="4.5" fill="#d8e0e3"/>
+<rect x="388" y="253" width="58" height="27" rx="8" fill="#e9a94d"/><text x="402" y="272" fill="#10233a" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="700">READY</text>
+</g>
+</svg>
