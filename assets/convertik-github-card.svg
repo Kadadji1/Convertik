@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720">
 <rect width="1600" height="720" rx="30" fill="#FFFFFF"/>
 <rect x="846" y="25" width="724" height="670" rx="34" fill="#D5E5F7"/>
-<rect x="78" y="54" width="82" height="82" rx="20" fill="#2F7DD1"/>
+<rect x="78" y="54" width="82" height="82" rx="20" fill="#0B1D42"/>
 <g transform="translate(87 63) scale(.125)"><g fill="#1B5FAA" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"><path d="M414.25 408.82 A220 220 0 0 1 188.02 465.23 L223.55 355.86 A105 105 0 0 0 331.53 328.94 Z"/><path d="M159.56 453.73 A220 220 0 0 1 36 256 L151 256 A105 105 0 0 0 209.97 350.37 Z"/><path d="M38.14 225.38 A220 220 0 0 1 188.02 46.77 L223.55 156.14 A105 105 0 0 0 152.02 241.39 Z"/><path d="M217.8 39.34 A220 220 0 0 1 433.98 126.69 L340.95 194.28 A105 105 0 0 0 237.77 152.6 Z"/></g><circle cx="256" cy="256" r="77" fill="#FFFFFF"/></g>
 <text x="180" y="102" fill="#0B1D42" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="700">Convertik</text>
 <text x="182" y="128" fill="#527094" font-family="Segoe UI,Arial,sans-serif" font-size="17">A new shape for your files.</text>

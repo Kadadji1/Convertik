@@ -1,4 +1,4 @@
-![Convertik app: radial file menu, conversion and automation](assets/convertik-ad-card.svg)
+![Convertik app: radial file menu, conversion and automation](assets/convertik-github-card.svg)
 
 # Convertik
 
