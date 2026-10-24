@@ -49,7 +49,7 @@ internal static class ShellIntegration
                 continue;
             }
             using var key = Registry.CurrentUser.CreateSubKey(root);
-            key.SetValue(null, "FileWheel…");
+            key.SetValue(null, "Convertik…");
             key.SetValue("Icon", $"\"{Exe}\",0");
             key.SetValue("MultiSelectModel", "Player");
             using var command = key.CreateSubKey("command");
