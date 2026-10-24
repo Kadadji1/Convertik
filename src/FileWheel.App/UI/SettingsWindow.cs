@@ -48,7 +48,7 @@ internal sealed partial class SettingsWindow : Window
         _tools = tools;
         _changed = changed;
         Theme.Refresh();
-        Title = T("FileWheel – settings", "FileWheel — настройки");
+        Title = T("Convertik – settings", "Convertik — настройки");
         Width = 1180;
         Height = 820;
         MinWidth = 760;
@@ -195,7 +195,7 @@ internal sealed partial class SettingsWindow : Window
         };
         brand.Children.Add(logo);
         var names = new StackPanel { VerticalAlignment = VerticalAlignment.Center };
-        var name = Text("FileWheel", 19, FontWeights.SemiBold);
+        var name = Text("Convertik", 19, FontWeights.SemiBold);
         name.FontFamily = Theme.DisplayFont;
         names.Children.Add(name);
         names.Children.Add(Text(T("A new shape for your files.", "Новая форма ваших файлов."), 12, brush: Theme.Muted));
@@ -326,7 +326,7 @@ internal sealed partial class SettingsWindow : Window
         root.Children.Add(SectionHeader(T("System", "Система")));
         root.Children.Add(Card(T("Start when I sign in", "Запускать при входе в систему"), null,
             Toggle(ShellIntegration.IsAutostartEnabled, v => Apply(() => ShellIntegration.SetAutostart(v))), glyph: ""));
-        root.Children.Add(Card(T("File Explorer context menu", "Контекстное меню Проводника"), T("A “FileWheel…” item on right-click", "Пункт «FileWheel…» при нажатии правой кнопкой"),
+        root.Children.Add(Card(T("File Explorer context menu", "Контекстное меню Проводника"), T("A “Convertik…” item on right-click", "Пункт «Convertik…» при нажатии правой кнопкой"),
             Toggle(ShellIntegration.IsContextMenuEnabled, v => Apply(() => ShellIntegration.SetContextMenu(v))), glyph: ""));
     }
 
@@ -393,7 +393,7 @@ internal sealed partial class SettingsWindow : Window
 
     private void HelpersPage(Panel root)
     {
-        PageHeader(root, PageName(SettingsPage.Helpers), T("Programs FileWheel uses for audio, video and documents.", "Программы для обработки аудио, видео и документов в FileWheel."));
+        PageHeader(root, PageName(SettingsPage.Helpers), T("Programs Convertik uses for audio, video and documents.", "Программы для обработки аудио, видео и документов в Convertik."));
         root.Children.Add(SectionHeader(T("Built in", "Встроено")));
         root.Children.Add(Card(T("Built in", "Встроено"),
             T("Images, PDFs, spreadsheets, subtitles and archives. Pandoc for documents is included. Audio and video need FFmpeg; some Office conversions need LibreOffice.", "Изображения, PDF, таблицы, субтитры и архивы. Pandoc для документов уже включён. Для аудио и видео нужен FFmpeg; для части операций Office — LibreOffice."),
@@ -470,7 +470,7 @@ internal sealed partial class SettingsWindow : Window
         }
         catch (Exception ex)
         {
-            MessageBox.Show(this, ex.Message, "FileWheel", MessageBoxButton.OK, MessageBoxImage.Warning);
+            MessageBox.Show(this, ex.Message, "Convertik", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
     }
 
@@ -479,8 +479,8 @@ internal sealed partial class SettingsWindow : Window
         var path = _tools.Find(tool);
         if (tool == ExternalTool.Pandoc)
             return Card("Pandoc 3.12.1", path is null
-                ? T("Extract the entire FileWheel archive, including the tools folder.", "Распакуйте архив FileWheel целиком, включая папку tools.")
-                : T("Included with FileWheel. Document conversions work without downloading Pandoc.", "Включён в FileWheel. Конвертация документов работает без скачивания Pandoc."),
+                ? T("Extract the entire Convertik archive, including the tools folder.", "Распакуйте архив Convertik целиком, включая папку tools.")
+                : T("Included with Convertik. Document conversions work without downloading Pandoc.", "Включён в Convertik. Конвертация документов работает без скачивания Pandoc."),
                 Badge(path is null ? T("missing", "отсутствует") : T("included", "в комплекте"), path is not null), glyph: Glyphs.Document);
         var description = path ?? tool switch
         {
@@ -509,12 +509,12 @@ internal sealed partial class SettingsWindow : Window
                 try
                 {
                     Process.Start(new ProcessStartInfo("cmd.exe",
-                        $"/c winget install -e --id {id} --accept-source-agreements --accept-package-agreements & echo. & echo {T("Done. Click Check again in FileWheel.", "Готово. Нажмите «Проверить снова» в FileWheel.")} & pause")
+                        $"/c winget install -e --id {id} --accept-source-agreements --accept-package-agreements & echo. & echo {T("Done. Click Check again in Convertik.", "Готово. Нажмите «Проверить снова» в Convertik.")} & pause")
                     { UseShellExecute = true });
                 }
                 catch (System.ComponentModel.Win32Exception ex)
                 {
-                    MessageBox.Show(this, ex.Message, "FileWheel", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show(this, ex.Message, "Convertik", MessageBoxButton.OK, MessageBoxImage.Warning);
                 }
             }, primary: true, glyph: "");
             install.Margin = new Thickness(10, 0, 0, 0);
