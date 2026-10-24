@@ -24,7 +24,7 @@ ArchitecturesInstallIn64BitMode=x64compatible
 OutputDir={#ArtifactsDir}
 OutputBaseFilename=Convertik-{#AppVersion}-Setup-win-x64
 SetupIconFile=..\src\FileWheel.App\Assets\FileWheel.ico
-UninstallDisplayIcon={app}\FileWheel.exe
+UninstallDisplayIcon={app}\Convertik.exe
 UninstallDisplayName=Convertik
 Compression=lzma2
 SolidCompression=yes
@@ -43,11 +43,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "{#PublishDir}\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs ignoreversion
 
 [Icons]
-Name: "{userprograms}\FileWheel"; Filename: "{app}\FileWheel.exe"
-Name: "{userdesktop}\FileWheel"; Filename: "{app}\FileWheel.exe"; Tasks: desktopicon
+Name: "{userprograms}\Convertik"; Filename: "{app}\Convertik.exe"
+Name: "{userdesktop}\Convertik"; Filename: "{app}\Convertik.exe"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\FileWheel.exe"; Description: "{cm:LaunchProgram,Convertik}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\Convertik.exe"; Description: "{cm:LaunchProgram,Convertik}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
 Filename: "{app}\FileWheel.exe"; Parameters: "--unregister"; Flags: runhidden waituntilterminated; RunOnceId: "Unregister"

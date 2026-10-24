@@ -38,7 +38,7 @@ jobs:
         run: |
           $p = Start-Process ./publish/Convertik.exe -ArgumentList '--self-test', './self-test' -PassThru -Wait
           Get-Content ./self-test/self-test.txt
-          if ($p.ExitCode -ne 0) { throw 'FileWheel self-test failed' }
+          if ($p.ExitCode -ne 0) { throw 'Convertik self-test failed' }
       - name: Package
         shell: pwsh
         run: |
