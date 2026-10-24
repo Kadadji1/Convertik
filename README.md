@@ -6,7 +6,7 @@
 
 Convert files, prepare images, organize batches, and automate repeat work from a radial menu. Processing happens locally on your PC.
 
-[Downloads](https://github.com/Kadadji1/Convertik/releases) · [Build from source](#build-from-source) · [License](LICENSE)
+[Downloads](#downloads) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
 
 ## At a glance
 
