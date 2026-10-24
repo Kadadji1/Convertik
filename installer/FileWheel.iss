@@ -50,4 +50,4 @@ Name: "{userdesktop}\Convertik"; Filename: "{app}\Convertik.exe"; Tasks: desktop
 Filename: "{app}\Convertik.exe"; Description: "{cm:LaunchProgram,Convertik}"; Flags: nowait postinstall skipifsilent
 
 [UninstallRun]
-Filename: "{app}\FileWheel.exe"; Parameters: "--unregister"; Flags: runhidden waituntilterminated; RunOnceId: "Unregister"
+Filename: "{app}\Convertik.exe"; Parameters: "--unregister"; Flags: runhidden waituntilterminated; RunOnceId: "Unregister"
