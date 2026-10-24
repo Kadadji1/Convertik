@@ -78,7 +78,7 @@ internal sealed class WheelWindow : Window
         _source = source;
         _execute = execute;
 
-        Title = "FileWheel";
+        Title = "Convertik";
         WindowStyle = WindowStyle.None;
         AllowsTransparency = true;
         Background = Brushes.Transparent;
