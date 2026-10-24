@@ -1,4 +1,4 @@
-![Convertik radial menu logo and brand card](assets/convertik-banner.svg)
+![Convertik radial menu logo and brand card](assets/convertik-readme-card.svg)
 
 # Convertik
 
