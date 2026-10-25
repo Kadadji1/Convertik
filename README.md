@@ -6,7 +6,7 @@
 
 Convert files, prepare images, organize batches, and automate repeat work from a radial menu. Processing happens locally on your PC.
 
-[Downloads](#downloads) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
+[Download ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-win-x64.zip) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
 
 ## At a glance
 
@@ -20,7 +20,9 @@ Conversions create new output files and leave originals in place. Batch renaming
 
 ## Downloads
 
-Download the [Convertik 1.0.0 preview](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.0) for Windows x64. Choose the `Setup-win-x64.exe` installer, or extract the `win-x64.zip` portable archive completely before running `Convertik.exe`. SHA-256 checksum files are provided alongside both packages. This is a pre-release while hands-on Windows testing continues; please [report issues](https://github.com/Kadadji1/Convertik/issues).
+**Windows x64:** [Download portable ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-win-x64.zip) · [Download installer](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-Setup-win-x64.exe)
+
+Extract the portable ZIP completely before running `Convertik.exe`. This is a pre-release while hands-on Windows testing continues; please [report issues](https://github.com/Kadadji1/Convertik/issues). [Checksums and release notes](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.0).
 
 ## Use the radial menu
 
