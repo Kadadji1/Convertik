@@ -20,7 +20,7 @@ Conversions create new output files and leave originals in place. Batch renaming
 
 ## Downloads
 
-The Windows installer and portable ZIP are currently available as the `Convertik-Windows` artifact in the [latest successful Windows build](https://github.com/Kadadji1/Convertik/actions/workflows/build.yml). Open a successful run and download the artifact under **Artifacts**; unpack it to find the installer, portable ZIP, and SHA-256 checksum. GitHub Actions artifacts expire. A permanent versioned download will appear on [GitHub Releases](https://github.com/Kadadji1/Convertik/releases) after the first release is published.
+Download the [Convertik 1.0.0 preview](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.0) for Windows x64. Choose the `Setup-win-x64.exe` installer, or extract the `win-x64.zip` portable archive completely before running `Convertik.exe`. SHA-256 checksum files are provided alongside both packages. This is a pre-release while hands-on Windows testing continues; please [report issues](https://github.com/Kadadji1/Convertik/issues).
 
 ## Use the radial menu
 
