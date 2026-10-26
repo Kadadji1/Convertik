@@ -32,7 +32,9 @@ jobs:
         run: dotnet test tests/FileWheel.Tests -c Release
       - name: Build
         shell: pwsh
-        run: ./build.ps1
+        run: |
+          $version = if ($env:GITHUB_REF_TYPE -eq 'tag') { $env:GITHUB_REF_NAME.TrimStart('v') } else { '1.0.1' }
+          ./build.ps1 -Version $version
       - name: Verify packaged app
         shell: pwsh
         run: |
