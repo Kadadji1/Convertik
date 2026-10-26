@@ -1,6 +1,6 @@
 # Third-party software
 
-Convertik is derived from the MIT-licensed Sweetch project (original copyright notices are preserved in [LICENSE](LICENSE)) and uses the following software. Each component keeps its own license.
+Convertik includes MIT-licensed code. Required copyright and permission notices are preserved in [LICENSE](LICENSE). The following components keep their own licenses.
 
 | Component | Used for | License |
 |---|---|---|
