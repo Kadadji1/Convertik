@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using FileWheel.Core;
 namespace FileWheel.App.Shell;
-/// <summary>No update server is configured for FileWheel 1.0. No background traffic or installers.</summary>
+/// <summary>No update server is configured for Convertik 1.0. No background traffic or installers.</summary>
 internal sealed class Updater
 {
     public static Version Current => new(1, 0, 0);
