@@ -6,7 +6,7 @@
 
 Drag a file from File Explorer, tap Shift, Ctrl, or Alt, and drop it on an action in Convertik’s radial menu. For batches, select files and use the keyboard shortcut. Processing runs locally on your PC.
 
-[Download ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-win-x64.zip) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
+[Download ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.1/Convertik-1.0.1-win-x64.zip) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
 
 ## At a glance
 
@@ -20,9 +20,9 @@ Conversions create new output files and leave originals in place. Batch renaming
 
 ## Downloads
 
-**Windows x64:** [Download portable ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-win-x64.zip) · [Download installer](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-Setup-win-x64.exe)
+**Windows x64:** [Download portable ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.1/Convertik-1.0.1-win-x64.zip) · [Download installer](https://github.com/Kadadji1/Convertik/releases/download/v1.0.1/Convertik-1.0.1-Setup-win-x64.exe)
 
-Extract the portable ZIP completely before running `Convertik.exe`. This is a pre-release while hands-on Windows testing continues; please [report issues](https://github.com/Kadadji1/Convertik/issues). [Checksums and release notes](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.0).
+Extract the portable ZIP completely before running `Convertik.exe`. This is an early release; please [report issues](https://github.com/Kadadji1/Convertik/issues). [Checksums and release notes](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.1).
 
 ## Use the radial menu
 
