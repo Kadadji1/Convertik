@@ -31,7 +31,7 @@ internal static class KnownFolders
     {
         get
         {
-            var dir = Path.Combine(Downloads, "FileWheel");
+            var dir = Path.Combine(Downloads, "Convertik");
             Directory.CreateDirectory(dir);
             return dir;
         }

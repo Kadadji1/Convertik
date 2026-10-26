@@ -241,7 +241,7 @@ internal sealed record DropContent(IReadOnlyList<FileItem> Items, Func<Task>? Pr
     private static HttpClient CreateHttp()
     {
         var client = new HttpClient { Timeout = TimeSpan.FromMinutes(2) };
-        client.DefaultRequestHeaders.UserAgent.ParseAdd("FileWheel/1.0");
+        client.DefaultRequestHeaders.UserAgent.ParseAdd("Convertik/1.0");
         return client;
     }
 

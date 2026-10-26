@@ -237,7 +237,7 @@ internal sealed class App : Application
             Arrows pick a slice, Enter runs it, Tab switches wheels, Esc closes.
             Also via right-click → “Convertik…”.
 
-            The result is saved next to the original file; the original stays untouched.
+            Conversions save a new file; rename and move actions change the selected file.
             """,
             $"""
             1. Возьмите файл мышью: в Проводнике, на рабочем столе, изображение в браузере или вложение Outlook.
@@ -254,7 +254,7 @@ internal sealed class App : Application
             Стрелки — выбор сектора, Enter — запуск, Tab — смена меню, Esc — закрыть.
             Также можно нажать правой кнопкой → «Convertik…».
 
-            Результат сохраняется рядом с исходным файлом. Исходник не изменяется.
+            Конвертация создаёт новый файл; переименование и перемещение меняют выбранный файл.
             """);
         MessageBox.Show(text, T("How Convertik works", "Как работает Convertik"), MessageBoxButton.OK, MessageBoxImage.Information);
     }

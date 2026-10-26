@@ -37,7 +37,7 @@ internal static class ForegroundHelper
             ShowInTaskbar = false,
             ResizeMode = ResizeMode.NoResize,
             Topmost = true,
-            Title = "FileWheel",
+            Title = "Convertik",
         };
         host.Show();
         var hwnd = new WindowInteropHelper(host).Handle;

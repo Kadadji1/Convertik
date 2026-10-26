@@ -13,7 +13,7 @@ using FileWheel.Core.Operations;
 namespace FileWheel.App;
 
 /// <summary>
-/// <c>FileWheel.exe --self-test [folder]</c>: builds every window offscreen and renders previews to PNG.
+/// <c>Convertik.exe --self-test [folder]</c>: builds every window offscreen and renders previews to PNG.
 /// Used by CI to catch UI construction errors on a real Windows machine.
 /// </summary>
 internal static class SelfTest
@@ -30,7 +30,7 @@ internal static class SelfTest
             Check(Brand.OriginalCredits.Contains("Metamorfolog", StringComparison.Ordinal) && Brand.OriginalCredits.Contains("mmmorozov", StringComparison.Ordinal), "upstream credits retained");
             var disabledUpdater = new Shell.Updater();
             Check(disabledUpdater.CheckAsync().GetAwaiter().GetResult() is null && disabledUpdater.LastChecked is null, "updates disabled");
-            log.Add("ok FileWheel branding, upstream credits, English-only edition and disabled updates");
+            log.Add("ok Convertik branding, upstream credits, English-only edition and disabled updates");
             TestBundledPandoc(outDir, log);
             foreach (var (language, dark, folder) in new[] { (Language.English, true, "en"), (Language.English, false, "en-light") })
             {
