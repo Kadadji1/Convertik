@@ -2,9 +2,9 @@
 
 # Convertik
 
-**A practical Windows file toolkit, one gesture away.**
+**Convert, resize, rename, and organize files from one quick menu on Windows.**
 
-Convert files, prepare images, organize batches, and automate repeat work from a radial menu. Processing happens locally on your PC.
+Drag a file from File Explorer, tap Shift, Ctrl, or Alt, and drop it on an action in Convertik’s radial menu. For batches, select files and use the keyboard shortcut. Processing runs locally on your PC.
 
 [Download ZIP](https://github.com/Kadadji1/Convertik/releases/download/v1.0.0/Convertik-1.0.0-win-x64.zip) · [Privacy](PRIVACY.md) · [Support](https://github.com/Kadadji1/Convertik/issues) · [Build from source](#build-from-source) · [License](LICENSE)
 
@@ -32,7 +32,7 @@ Extract the portable ZIP completely before running `Convertik.exe`. This is a pr
 
 For keyboard use, select files in File Explorer and press **Ctrl + Alt + Space**. Use the arrow keys to choose an item, **Enter** to run it, **Tab** to switch menus, and **Esc** to close the wheel.
 
-Convertik runs in the Windows notification area. Double-click its tray icon to open Settings. The interface is English-only and supports dark, light, and system themes.
+Convertik runs in the Windows notification area. Double-click its tray icon to open Settings. On first launch it enables the Explorer context-menu entry and Windows autostart; you can turn either off in Settings. The interface is English-only and supports dark, light, and system themes.
 
 ## Formats and requirements
 
@@ -43,7 +43,7 @@ Available operations depend on the input files and installed tools. Images inclu
 - Settings: `%APPDATA%\FileWheel`
 - Downloaded tools: `%LOCALAPPDATA%\FileWheel\tools`
 
-Updates are currently disabled; the app does not contact an update server.
+Automatic update checks are currently disabled. Download future versions from GitHub Releases.
 
 ## Build from source
 
