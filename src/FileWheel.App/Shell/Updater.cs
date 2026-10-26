@@ -4,7 +4,7 @@ namespace FileWheel.App.Shell;
 /// <summary>No update server is configured for Convertik 1.0. No background traffic or installers.</summary>
 internal sealed class Updater
 {
-    public static Version Current => new(1, 0, 0);
+    public static Version Current => typeof(Updater).Assembly.GetName().Version ?? new Version(0, 0);
     public static bool IsInstalled => false;
     public UpdateInfo? Available => null;
     public DateTime? LastChecked => null;
