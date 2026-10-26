@@ -3,7 +3,7 @@ using static FileWheel.Core.Loc;
 
 namespace FileWheel.App.Shell;
 
-/// <summary>Autostart and the "FileWheel…" entry in Explorer's context menu (per user, no admin needed).</summary>
+/// <summary>Autostart and the "Convertik…" entry in Explorer's context menu (per user, no admin needed).</summary>
 internal static class ShellIntegration
 {
     private const string RunKey = @"Software\Microsoft\Windows\CurrentVersion\Run";
