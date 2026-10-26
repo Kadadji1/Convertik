@@ -81,7 +81,7 @@ internal sealed class GlobalInput : IDisposable
         })
         {
             IsBackground = true,
-            Name = "FileWheel input hooks",
+            Name = "Convertik input hooks",
             Priority = ThreadPriority.AboveNormal,
         };
         _thread.Start();
