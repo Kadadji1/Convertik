@@ -22,7 +22,7 @@ Conversions create new output files and leave originals in place. Batch renaming
 
 **Windows x64:** [Download complete bundle (ZIP)](https://github.com/Kadadji1/Convertik/releases/download/v1.0.2/Convertik-1.0.2-Windows.zip) · [Download installer only](https://github.com/Kadadji1/Convertik/releases/download/v1.0.2/Convertik-1.0.2-Setup-win-x64.exe) · [Download portable ZIP only](https://github.com/Kadadji1/Convertik/releases/download/v1.0.2/Convertik-1.0.2-win-x64.zip)
 
-Extract the portable ZIP completely before running `Convertik.exe`. This is an early release; please [report issues](https://github.com/Kadadji1/Convertik/issues). [Checksums and release notes](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.2).
+Extract `Convertik-1.0.2-Windows.zip` first. Run the Setup EXE to install, or extract the separate `Convertik-1.0.2-win-x64.zip` inside the bundle before running `Convertik.exe`. This is an early release; please [report issues](https://github.com/Kadadji1/Convertik/issues). [Checksums and release notes](https://github.com/Kadadji1/Convertik/releases/tag/v1.0.2).
 
 ## Use the radial menu
 
